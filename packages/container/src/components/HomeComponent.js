@@ -5,8 +5,6 @@ import { useHistory } from 'react-router-dom';
 import WorkshopTable from './WorkshopTable';
 import PopularServices from './PopularServices';
 
-import ContactPage from './ContactPage';
-
 const Home = () => {
   const [isVisible, setIsVisible] = useState(true);
   const history = useHistory();
@@ -45,11 +43,6 @@ const Home = () => {
               id: '2',
               label: 'Popular Workshops',
               content: <PopularServices />,
-            },
-            {
-              id: '3',
-              label: 'Contact Us',
-              content: <ContactPage />,
             },
           ]}
         />
