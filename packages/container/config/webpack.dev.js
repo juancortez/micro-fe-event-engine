@@ -17,7 +17,6 @@ const devConfig = {
       name: 'container',
       remotes: {
         createWorkshop: 'createWorkshop@http://localhost:8081/remoteEntry.js',
-        contact: 'contact@http://localhost:8082/remoteEntry.js',
       },
       shared: packageJson.dependencies,
     }),

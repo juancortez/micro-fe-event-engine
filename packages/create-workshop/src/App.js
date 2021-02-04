@@ -1,12 +1,12 @@
 import React from 'react';
-import { Switch, Route, Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import WorkshopConfirmation from './components/WorkshopConfirmation';
 import CreateWorkshop from './components/CreateWorkshop';
 
-export default ({ history }) => {
+export default () => {
   return (
-    <Router history={history}>
+    <Router>
       <Switch>
         <Route exact path="/create/workshop-created" component={WorkshopConfirmation} />
         <Route exact path="/create" component={CreateWorkshop} />
